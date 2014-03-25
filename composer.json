@@ -1,18 +1,18 @@
 {
-	"name": "midiasEducativas/slim-mvc",
-	"require": {
+    "name": "midias-educativas/slim-midias",
+    "require": {
 
         "slim/slim": "2.*",
         "slim/views": "0.*",
-        "twig/twig": "1.*"
-	},
-	"autoload": {
+        "twig/twig": "1.*",
+        "midias-educativas/slim-midias": "*"
+    },
+    "autoload": {
 
-        "classmap":[
-            "slimMidias"
+        "classmap": [
+            "vendor/midias-educativas/slim-midias/slimMidias"
         ]
 
 
-
-	}
+    }
 }
