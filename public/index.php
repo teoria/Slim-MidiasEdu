@@ -2,13 +2,16 @@
 session_cache_limiter(false);
 session_start();
 
-require '../vendor/autoload.php';
 
-require("../settings_routes.php");
+require("settings.php");
+require("routes.php");
+
+require VENDOR_PATH;
+
 
 $autoloadManager = new autoloadManager(null, autoloadManager::SCAN_ONCE);
-$autoloadManager->addFolder('../app/controller');
-$autoloadManager->addFolder('../app/model');
+$autoloadManager->addFolder(CONTROLLER_PATH);
+$autoloadManager->addFolder(MODEL_PATH);
 $autoloadManager->register();
 
 
