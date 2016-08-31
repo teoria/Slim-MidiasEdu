@@ -1,5 +1,8 @@
 {
     "require": {
+         "slim/views": "0.*",
+        "twig/twig": "1.*",
+        "slim/slim": "2.4.0",
         "midias-educativas/slim-midias": "*"
     }
 }
